@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+  <title>SatyaJit</title>
+  <link rel="stylesheet" href="static/css/style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="hhh">Welcome to SatyaJit WorkSpace</div>
+  <nav class="navbar navbar-expand-lg">
+    <a class="nav-logo" href="#"> SatyaJit </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link1" href="#"> Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link1" href="#"> Services </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link1" href="#"> About </a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control custom me-2" type="search" placeholder="Search" aria-label="Search" />
+        <button class="btn" style="
+                background-color: blueviolet;
+                color: white;
+                border-radius: 50%;
+              " type="button">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+    </div>
+  </nav>
+  <div class="services">
+    <div class="heading">
+      <span>Our services</span>
+    </div>
+    <div class="container">
+      <div class="service-box">
+        <div class="sec-toggler">
+          <div class="tg"></div>
+          <button class="btn btn-sheets">Sheets</button>
+          <button class="btn btn-tools">Tools</button>
+        </div>
+        <ul class="service-menu sheet-menu active" id="sheet-menu">
+          <li class="service-item">
+            <a href="https://docs.google.com/spreadsheets/d/1_Tfy236aj3aip8qfJ0pbfNyzaPsKikl81uPUj_RA6Mw"
+              class="service-link" target="_blank" rel="noreferrer">
+              <i class="fas fa-file-alt"></i> Work Sheet
+            </a>
+          </li>
+          <li class="service-item">
+            <a href="https://docs.google.com/spreadsheets/d/1y5NXKMgCgbNuUTYeMnbk2KGJ_lSfvCp1ZGNh2NEvpnU"
+              class="service-link" target="_blank" rel="noreferrer">
+              <i class="fas fa-file-alt"></i> Priority Sheet
+            </a>
+          </li>
+          <li class="service-item">
+            <a href="https://docs.google.com/spreadsheets/d/1UQ-Sis33M6iDJx4vJwnvUwyBJLjHSczmyrdmhfWXF4g"
+              class="service-link" target="_blank" rel="noreferrer">
+              <i class="fas fa-file-alt"></i> Count Sheet
+            </a>
+          </li>
+          <li class="service-item">
+            <a href="https://docs.google.com/spreadsheets/d/1uCUTpCGl0Jd7koI1fok8ft4UT_d1B6Ina_-tP2aD1kU"
+              class="service-link" target="_blank" rel="noreferrer">
+              <i class="fas fa-file-alt"></i> Audit Sheet
+            </a>
+          </li>
+          <li class="service-item">
+            <a href="https://docs.google.com/spreadsheets/d/1idFo5miNhCmsjIusixpzXZi3YXe7DIWAjHwRzl-jYgY"
+              class="service-link" target="_blank" rel="noreferrer">
+              <i class="fas fa-file-alt"></i> Hourly Audit Sheet
+            </a>
+          </li>
+          <li class="service-item">
+            <a href="https://docs.google.com/spreadsheets/d/17YnMFcqDIgw6c4P7VDiYVRbFa1eygn6dbbE2wcqSdxk"
+              class="service-link" target="_blank" rel="noreferrer">
+              <i class="fas fa-file-alt"></i> Call Tracker Sheet
+            </a>
+          </li>
+        </ul>
+        <ul class="service-menu tool-menu" id="tool-menu">
+          <li class="service-item">
+            <a href="https://mail.google.com" class="service-link" target="_blank" rel="noreferrer">
+              <i class="fas fa-envelope-open-text"></i> Gmail
+            </a>
+          </li>
+          <li class="service-item">
+            <a href="https://docs.google.com" class="service-link" target="_blank" rel="noreferrer">
+              <i class="far fa-file-alt"></i> Google Docs
+            </a>
+          </li>
+          <li class="service-item">
+            <a href="https://drive.google.com/drive/folders/1LWbDBTLu0dxUBF2rzmzMCrjQ4L44ZQ_1" class="service-link"
+              target="_blank" rel="noreferrer">
+              <i class="fab fa-google-drive"></i> September Drive
+            </a>
+          </li>
+          <li class="service-item">
+            <a href="https://lg51rb1td3.labeling.us-west-2.sagemaker.aws" class="service-link" target="_blank"
+              rel="noreferrer">
+              <i class="fab fa-aws"></i> Sagemaker West
+            </a>
+          </li>
+          <li class="service-item">
+            <a href="https://t5y7v24dx4.labeling.ap-south-1.sagemaker.aws" class="service-link" target="_blank"
+              rel="noreferrer">
+              <i class="fab fa-aws"></i> Sagemaker South
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+  <script src="static/js/main.js"></script>
+</body>
+
+</html>

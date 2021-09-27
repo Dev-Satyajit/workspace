@@ -1,0 +1,246 @@
+*{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.hhh{
+  background-color: #ECEEF1;
+  padding: 5px 30px;
+  color: blueviolet;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: right;
+  letter-spacing: 2px;
+  height: 40px;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  padding: 0 30px;
+  /* border-bottom: 1px solid #e0e0e0; */
+  box-shadow: rgba(138, 43, 226, 0.2) 0px 3px 10px;
+  background-color: white;
+  z-index: 999;
+}
+
+.nav-logo {
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: 600;
+  color: blueviolet;
+  margin-right: 20px;
+  padding: 10px 0;
+}
+.nav-logo:hover {
+  color: blueviolet;
+}
+.nav-link1 {
+  text-decoration: none;
+  color: #303030;
+  font-size: 20px;
+  font-weight: 400;
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+  padding: 20px 20px;
+  transition: 0.2s;
+}
+.nav-link1:hover {
+  color: blueviolet;
+}
+
+.d-flex {
+  align-items: center;
+}
+
+.form-control.custom {
+  height: 80px;
+  border-radius: 0;
+  border: none;
+  font-size: 20px;
+  font-weight: 400;
+}
+.form-control.custom:focus {
+  box-shadow: none;
+}
+
+@media (max-width: 991px) {
+  .navbar {
+    padding: 0 15px;
+  }
+  .nav-logo {
+    font-size: 35px;
+  }
+  .nav-link1 {
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .d-flex {
+    margin-bottom: 10px;
+  }
+  .form-control.custom {
+    height: 50px;
+    border-radius: 0;
+    border: none;
+  }
+  .form-control.custom:focus {
+    box-shadow: none;
+  }
+}
+
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.fa-bars {
+  color: blueviolet;
+  font-size: 30px;
+}
+
+.services {
+  min-height: 900px;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  background-image: url("../media/bg-home.jpg");
+  background-size: cover;
+  background-position: top;
+}
+
+.heading {
+  height: 80px;
+  text-align: left;
+  padding: 20px 30px;
+  margin-bottom: 20px;
+  /* box-shadow: rgba(138, 43, 226, 0.2) 0px 3px 10px; */
+}
+
+.heading > span {
+  font-size: 30px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  padding: 0 20px;
+  /* border-bottom: 2px solid blueviolet; */
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+.heading > span > i {
+  font-size: 20px;
+}
+.service-box {
+  position: relative;
+  border: 1px solid blueviolet;
+  width: 700px;
+  margin: auto;
+  border-radius: 20px;
+  background-color: white;
+  overflow: hidden;
+  height: 700px;
+}
+
+.sec-toggler {
+  position: relative;
+  height: 60px;
+  display: flex;
+  /* border-bottom: 1px solid #e4c7ff; */
+  box-shadow: rgba(138, 43, 226, 0.2) 0px 3px 10px;
+}
+
+.sec-toggler > .btn {
+  box-sizing: border-box;
+  height: 100%;
+  width: 50%;
+  border-radius: 0;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.btn-sheets{
+ color: blueviolet;
+}
+
+.sec-toggler > .btn:focus {
+  box-shadow: none;
+}
+
+.tg {
+  border-bottom: 2px solid blueviolet;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.service-menu {
+  position: absolute;
+  top: 100px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+.service-menu.sheet-menu {
+  left: -100%;
+}
+.service-menu.tool-menu {
+  left: 100%;
+}
+.service-menu.active {
+  left: 0;
+}
+.service-item {
+  list-style: none;
+  margin: 10px 0;
+}
+.service-link {
+  color: #303030;
+  display: inline-flex;
+  align-items: center;
+  /* justify-content: center; */
+  width: 200px;
+  height: 60px;
+  padding: 0 10px;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  box-shadow: rgba(138, 43, 226, 0.2) 0px 3px 10px;
+  transition: 0.1s;
+}
+
+.service-link i {
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  background-color: #ac52ff;
+  border-radius: 20px;
+  margin-right: 10px;
+  color: white;
+}
+
+.service-link:hover {
+  color: blueviolet;
+  transform: scale(1.2);
+}
+
+@media (max-width: 769px) {
+  .service-box {
+    width: 100%;
+  }
+  .tg {
+    transition: 0.3s;
+  }
+  .service-menu {
+    transition: 0.3s;
+  }
+}
