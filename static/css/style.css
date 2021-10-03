@@ -4,12 +4,16 @@
 .hhh{
   background-color: #ECEEF1;
   padding: 7px 30px;
-  color: blueviolet;
+  text-align: right;
+  height: 40px;
+}
+.hhh .email{
   font-weight: 400;
   font-size: 16px;
-  text-align: right;
   letter-spacing: 1px;
-  height: 40px;
+  text-decoration: none;
+  color: blueviolet;
+  padding: 0 10px;
 }
 
 .navbar {
@@ -242,5 +246,25 @@
   }
   .service-menu {
     transition: 0.3s;
+  }
+}
+@media (max-width:576px) {
+  .hhh{
+    padding: 7px 20px;
+  }
+  .hhh .email{
+    font-size: 14px;
+    letter-spacing: normal;
+    padding: 0 5px;
+  }
+}
+@media (max-width:400px) {
+  .hhh{
+    height: 60px;
+    padding: 7px 10px;
+  }
+  .hhh .email{
+    font-size: 14px;
+    display: block;
   }
 }
