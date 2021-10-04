@@ -12,3 +12,22 @@ $(".btn-sheets").click(function () {
   $("#tool-menu").removeClass("active");
   $(".tg").css("left", "0");
 });
+var months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+var d = new Date();
+var monthName = months[d.getMonth()];
+document.getElementById(
+  "drive-link"
+).innerHTML = `<i class="fab fa-google-drive"></i> ${monthName} Drive`;
