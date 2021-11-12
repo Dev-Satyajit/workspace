@@ -1,7 +1,7 @@
 :root {
-  --main: rgb(0, 190, 0);
-  --link: rgb(0, 190, 0);
-  --shadow: rgba(0, 190, 0, 0.2);
+  --main: rgb(0, 46, 146);
+  --link: rgb(0, 46, 146);
+  --shadow: rgba(0, 46, 146, 0.2);
 }
 
 *{
